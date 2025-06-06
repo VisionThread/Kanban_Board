@@ -3,13 +3,7 @@ import React, { createContext, useState } from "react";
 const KanbanContext = createContext();
 
 export const KanbanProvider = ({ children }) => {
-  const [tasks, setTasks] = useState([
-    // { id: 1, title: "Task 1", status: "todo" },
-    // { id: 2, title: "Task 2", status: "todo" },
-    // { id: 3, title: "Task 3", status: "inProgress" },
-    // { id: 4, title: "Task 4", status: "inProgress" },
-    // { id: 5, title: "Task 5", status: "done" },
-  ]);
+  const [tasks, setTasks] = useState([]);
 
   const moveTask = (id, newStatus) => {
     setTasks(
